@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<title>MTAB</title>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/mtab.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#mTab1').mTab({
+			tabHeading: '.mTabHeding',
+			contentWrap: '.divsWrap',
+		});
+		$('#mTab2').mTab({
+			tabHeading: '.mTabHeding',
+			contentWrap: '.divsWrap',
+			effect: "Right"
+		});
+		$('#mTab3').mTab({
+			tabHeading: '.mTabHeding',
+			contentWrap: '.divsWrap',
+			effect: "Left"
+		});
+		$('#mTab4').mTab({
+			tabHeading: '.mTabHeding',
+			contentWrap: '.divsWrap',
+			effect: "Fade"
+		});
+		$('#mTab5').mTab({
+			tabHeading: '.mTabHeding',
+			contentWrap: '.divsWrap',
+			effect: "Slide"
+		});
+		$('#mTab6').mTab({
+			tabHeading: '.mTabHeding',
+			contentWrap: '.divsWrap',
+			accordion : true
+		});
+		$('#mTab7').mTab({
+			tabHeading: '.mTabHeding',
+			contentWrap: '.divsWrap',
+			accordion : true,
+			showAllTab: true
+		});
+	});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/mtab.css" />
+</head>
+<body>
+<h1>Basic</h1>
+	<div id="mTab1" class="mTab">
+		<ul class="mTabHeding">
+			<li><a href="#tab1">Tab1</a></li>
+			<li><a href="#tab2">Tab2</a></li>
+			<li><a href="#tab3">Tab3</a></li>
+			<li><a href="#tab4">Tab4</a></li>
+		</ul>
+		<div class="divsWrap">
+			<div id="tab1">Tab1</div>
+			<div id="tab2">Tab2</div>
+			<div id="tab3">Tab3</div>
+			<div id="tab4">Tab4</div>
+		</div>
+	</div>
+<h1>Slide Right</h1>
+	<div id="mTab2" class="mTab">
+		<ul class="mTabHeding">
+			<li><a href="#tab1">Tab1</a></li>
+			<li><a href="#tab2">Tab2</a></li>
+			<li><a href="#tab3">Tab3</a></li>
+			<li><a href="#tab4">Tab4</a></li>
+		</ul>
+		<div class="divsWrap">
+			<div id="tab1">Tab1</div>
+			<div id="tab2">Tab2</div>
+			<div id="tab3">Tab3</div>
+			<div id="tab4">Tab4</div>
+		</div>
+	</div>
+<h1>Slide Left</h1>
+	<div id="mTab3" class="mTab">
+		<ul class="mTabHeding">
+			<li><a href="#tab1">Tab1</a></li>
+			<li><a href="#tab2">Tab2</a></li>
+			<li><a href="#tab3">Tab3</a></li>
+			<li><a href="#tab4">Tab4</a></li>
+		</ul>
+		<div class="divsWrap">
+			<div id="tab1">Tab1</div>
+			<div id="tab2">Tab2</div>
+			<div id="tab3">Tab3</div>
+			<div id="tab4">Tab4</div>
+		</div>
+	</div>
+<h1>Fade</h1>
+	<div id="mTab4" class="mTab">
+		<ul class="mTabHeding">
+			<li><a href="#tab1">Tab1</a></li>
+			<li><a href="#tab2">Tab2</a></li>
+			<li><a href="#tab3">Tab3</a></li>
+			<li><a href="#tab4">Tab4</a></li>
+		</ul>
+		<div class="divsWrap">
+			<div id="tab1">Tab1</div>
+			<div id="tab2">Tab2</div>
+			<div id="tab3">Tab3</div>
+			<div id="tab4">Tab4</div>
+		</div>
+	</div>
+<h1>Toggle</h1>
+	<div id="mTab5" class="mTab">
+		<ul class="mTabHeding">
+			<li><a href="#tab1">Tab1</a></li>
+			<li><a href="#tab2">Tab2</a></li>
+			<li><a href="#tab3">Tab3</a></li>
+			<li><a href="#tab4">Tab4</a></li>
+		</ul>
+		<div class="divsWrap">
+			<div id="tab1">Tab1</div>
+			<div id="tab2">Tab2</div>
+			<div id="tab3">Tab3</div>
+			<div id="tab4">Tab4</div>
+		</div>
+	</div>
+<h1>Accordion</h1>
+	<div id="mTab6" class="mTab">
+		<ul class="mTabHeding">
+			<li><a href="#tab1">Tab1</a></li>
+			<li><a href="#tab2">Tab2</a></li>
+			<li><a href="#tab3">Tab3</a></li>
+			<li><a href="#tab4">Tab4</a></li>
+		</ul>
+		<div class="divsWrap">
+			<div id="tab1">Tab1</div>
+			<div id="tab2">Tab2</div>
+			<div id="tab3">Tab3</div>
+			<div id="tab4">Tab4</div>
+		</div>
+	</div>
+<h1>Accordion all tab open</h1>
+	<div id="mTab7" class="mTab">
+		<ul class="mTabHeding">
+			<li><a href="#tab1">Tab1</a></li>
+			<li><a href="#tab2">Tab2</a></li>
+			<li><a href="#tab3">Tab3</a></li>
+			<li><a href="#tab4">Tab4</a></li>
+		</ul>
+		<div class="divsWrap">
+			<div id="tab1">Tab1</div>
+			<div id="tab2">Tab2</div>
+			<div id="tab3">Tab3</div>
+			<div id="tab4">Tab4</div>
+		</div>
+	</div>
+</body>
+</html>

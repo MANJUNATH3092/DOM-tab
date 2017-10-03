@@ -1,0 +1,67 @@
+* {margin: 0;padding: 0;border: none;outline: none;}
+.mTab{width: 80%;margin: 10px 0;}
+.mTab > .divsWrap > h3 {display: none;color: #FFF;padding: 10px;position: relative;background: #797d82;font-size: 16px;margin-bottom: 2px;cursor: pointer;}
+.mTab > .divsWrap > h3.active {background: #6d0020;}
+.mTab > ul > li{width: 21%;float: left;background: #797d82;border-left: 1px solid #FFF;text-align: center;font-size: 14px;list-style-type: none;}
+.mTab .mTabHeding:after{content: "";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+.mTab > ul > li > a{color: #FFF !important;padding: 16px;display: block;position: relative;}
+.mTab .divsWrap a.log-addTocart-btn {color: #fff;}
+.mTab .divsWrap a{color: #000;}
+.mTab ul li a.active{background: #6d0020;}
+.mTab .divsWrap {background: #FFF;text-align: left;position: relative;width: 100%;z-index: 9;overflow: hidden;}
+.divsWrap > div {background: #FFF;margin: 2px 0;border: 2px solid #BFBFBF;}
+.mTab .divsWrap ul li{float: none;width: auto;padding: 0 0 0 24px;position: relative;}
+.mTab .divsWrap ul li:before{
+	content: '\2022';
+	display: block;
+	height: 0;
+	left: 4px;
+	position: absolute;
+	font-size: 30px;
+	color: #6d0020;
+	top: -7px;
+}
+.divsWrap .hideBlockRight{
+	-webkit-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	transform: translateX(100%);
+	opacity:0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=.5)";
+	filter: alpha(opacity=.5);
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	position: absolute;
+	top: 0;
+}
+.divsWrap .showBlockRight{
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	opacity:1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+	.divsWrap .hideBlockLeft{
+	-webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+	opacity:0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	position: absolute;
+	top: 0;
+}
+.divsWrap .showBlockLeft{
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	opacity:1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
